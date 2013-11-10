@@ -305,7 +305,6 @@ static NSString *const BaseURLString = @"http://www.raywenderlich.com/downloads/
                                                                 [av show];
                                                             }];
         
-        
         [operation start];
     }
 }
