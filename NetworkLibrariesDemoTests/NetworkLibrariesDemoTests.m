@@ -2,7 +2,7 @@
 //  NetworkLibrariesDemoTests.m
 //  NetworkLibrariesDemoTests
 //
-//  Created by xd on 13-11-10.
+//  Created by Gavin Yang on 13-11-10.
 //  Copyright (c) 2013年 redexpress.github.com. All rights reserved.
 //
 
