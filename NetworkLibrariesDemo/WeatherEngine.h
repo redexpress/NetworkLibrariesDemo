@@ -6,8 +6,10 @@
 //  Copyright (c) 2013年 redexpress.github.com. All rights reserved.
 //
 
-#import "MKNetworkEngine.h"
+typedef void (^WeatherResponseBlock)(NSArray *weatherList);
 
 @interface WeatherEngine : MKNetworkEngine
-
+- (MKNetworkOperation*) getWeather:(NSDictionary *)params
+                 completionHandler:(WeatherResponseBlock)completion
+                      errorHandler:(MKNKErrorBlock)error;
 @end

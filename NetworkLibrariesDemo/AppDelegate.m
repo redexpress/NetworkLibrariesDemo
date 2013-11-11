@@ -12,7 +12,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.weatherEngine = [[WeatherEngine alloc] initWithHostName:@"download.finance.yahoo.com"];
+    [self.weatherEngine useCache];
     return YES;
 }
 							

@@ -16,3 +16,8 @@
 #import <MobileCoreServices/MobileCoreServices.h>
 #import <CoreLocation/CoreLocation.h>
 #import "AFNetworking.h"
+#import "MKNetworkKit.h"
+
+
+#define kBaseURLString  @"http://www.raywenderlich.com/downloads/weather_sample/"
+

@@ -51,6 +51,8 @@
 		772CF06418308ECC00027038 /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 772CF05B18308ECC00027038 /* DDXMLDocument.m */; };
 		772CF06518308ECC00027038 /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 772CF05D18308ECC00027038 /* DDXMLElement.m */; };
 		772CF06618308ECC00027038 /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 772CF05F18308ECC00027038 /* DDXMLNode.m */; };
+		772CF06B1830A38E00027038 /* WeatherEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 772CF06A1830A38E00027038 /* WeatherEngine.m */; };
+		772CF06E1830AD6900027038 /* WeartherParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 772CF06D1830AD6900027038 /* WeartherParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +148,10 @@
 		772CF05E18308ECC00027038 /* DDXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLNode.h; sourceTree = "<group>"; };
 		772CF05F18308ECC00027038 /* DDXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLNode.m; sourceTree = "<group>"; };
 		772CF06118308ECC00027038 /* DDXMLPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
+		772CF0691830A38E00027038 /* WeatherEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherEngine.h; sourceTree = "<group>"; };
+		772CF06A1830A38E00027038 /* WeatherEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherEngine.m; sourceTree = "<group>"; };
+		772CF06C1830AD6900027038 /* WeartherParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeartherParser.h; sourceTree = "<group>"; };
+		772CF06D1830AD6900027038 /* WeartherParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeartherParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,6 +310,10 @@
 				2F7C2367182FC16900F4F417 /* MainTableViewController.m */,
 				772CF04F18308C7E00027038 /* Weather.h */,
 				772CF05018308C7E00027038 /* Weather.m */,
+				772CF0691830A38E00027038 /* WeatherEngine.h */,
+				772CF06A1830A38E00027038 /* WeatherEngine.m */,
+				772CF06C1830AD6900027038 /* WeartherParser.h */,
+				772CF06D1830AD6900027038 /* WeartherParser.m */,
 				2FAC9292182FAF30002414C8 /* Images.xcassets */,
 				2FAC9281182FAF30002414C8 /* Supporting Files */,
 			);
@@ -504,6 +514,7 @@
 				2F7C23DA182FDDFA00F4F417 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				2F7C23D7182FDDFA00F4F417 /* AFHTTPRequestOperation.m in Sources */,
 				772CF06218308ECC00027038 /* DDXMLElementAdditions.m in Sources */,
+				772CF06B1830A38E00027038 /* WeatherEngine.m in Sources */,
 				2F0BC1C6182FE249006E1604 /* NSDate+RFC1123.m in Sources */,
 				2F7C23D8182FDDFA00F4F417 /* AFImageRequestOperation.m in Sources */,
 				772CF06418308ECC00027038 /* DDXMLDocument.m in Sources */,
@@ -513,6 +524,7 @@
 				2F7C23D9182FDDFA00F4F417 /* AFJSONRequestOperation.m in Sources */,
 				2F0BC1CC182FE249006E1604 /* MKNetworkOperation.m in Sources */,
 				2F0BC1CB182FE249006E1604 /* MKNetworkEngine.m in Sources */,
+				772CF06E1830AD6900027038 /* WeartherParser.m in Sources */,
 				2F0BC1C5182FE249006E1604 /* NSData+MKBase64.m in Sources */,
 				2F0BC1C8182FE249006E1604 /* NSString+MKNetworkKitAdditions.m in Sources */,
 				2FAC9287182FAF30002414C8 /* main.m in Sources */,

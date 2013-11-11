@@ -25,7 +25,7 @@
 
 #define kLatitude 22.565108
 #define kLongitude 114.060319
-static NSString *const BaseURLString = @"http://www.raywenderlich.com/downloads/weather_sample/";
+
 
 @implementation MainTableViewController
 
@@ -47,6 +47,13 @@ static NSString *const BaseURLString = @"http://www.raywenderlich.com/downloads/
     [self.tableView reloadData];
     
 
+}
+
+- (void)viewDidDisappear:(BOOL)animated{
+    if(self.weatherOperation) {
+        [self.weatherOperation cancel];
+        self.weatherOperation = nil;
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -211,7 +218,7 @@ static NSString *const BaseURLString = @"http://www.raywenderlich.com/downloads/
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
     
     if(buttonIndex==0){
-        NSURL *baseURL = [NSURL URLWithString:[NSString stringWithFormat:BaseURLString]];
+        NSURL *baseURL = [NSURL URLWithString:[NSString stringWithFormat:kBaseURLString]];
         NSDictionary *parameters = [NSDictionary dictionaryWithObject:@"xml" forKey:@"format"];
         
         AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:baseURL];
@@ -240,7 +247,7 @@ static NSString *const BaseURLString = @"http://www.raywenderlich.com/downloads/
          ];
     }
     else if (buttonIndex==1){
-        NSURL *baseURL = [NSURL URLWithString:[NSString stringWithFormat:BaseURLString]];
+        NSURL *baseURL = [NSURL URLWithString:[NSString stringWithFormat:kBaseURLString]];
         NSDictionary *parameters = [NSDictionary dictionaryWithObject:@"json" forKey:@"format"];
         
         AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:baseURL];
@@ -264,7 +271,7 @@ static NSString *const BaseURLString = @"http://www.raywenderlich.com/downloads/
                 }
          ];
     } else if (buttonIndex == 2) {
-        NSString *weatherUrl = [NSString stringWithFormat:@"%@weather.php?format=json",BaseURLString];
+        NSString *weatherUrl = [NSString stringWithFormat:@"%@weather.php?format=json",kBaseURLString];
         
         NSURL *url = [NSURL URLWithString:weatherUrl];
         NSURLRequest *request = [NSURLRequest requestWithURL:url];
@@ -288,7 +295,7 @@ static NSString *const BaseURLString = @"http://www.raywenderlich.com/downloads/
         
         [operation start];
     } else if(buttonIndex == 3){
-        NSString *weatherUrl = [NSString stringWithFormat:@"%@weather.php?format=xml",BaseURLString];
+        NSString *weatherUrl = [NSString stringWithFormat:@"%@weather.php?format=xml",kBaseURLString];
         NSURL *url = [NSURL URLWithString:weatherUrl];
         NSURLRequest *request = [NSURLRequest requestWithURL:url];
         

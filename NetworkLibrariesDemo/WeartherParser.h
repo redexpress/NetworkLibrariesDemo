@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface WeartherParser : NSObject
-
+- (NSArray *)parseWeather:(NSData *)data;
 @end

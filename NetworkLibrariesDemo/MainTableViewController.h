@@ -10,6 +10,8 @@
 
 @interface MainTableViewController : UITableViewController
 
+@property (strong, nonatomic) MKNetworkOperation *weatherOperation;
+
 - (IBAction)clearClicked:(id)sender;
 - (IBAction)apiClicked:(id)sender;
 - (IBAction)afnetworking1Clicked:(id)sender;
